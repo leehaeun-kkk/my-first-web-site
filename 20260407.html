@@ -1,0 +1,57 @@
+<html>
+    <head>
+        <title></title>
+    </head>
+    <style>
+        h1 {color:rgba(25, 52, 227, 0.667)}
+        .p_back{text-align:center;line-height:30px;margin-top:50px;background-color:rgba(0, 174, 255, 0.437);color:white}
+        .p_back2{font-size:20px;font-weight:bold;color:blue}
+         ul li{float:left;width:100px}
+        .id_title{width:200px!important;}
+
+        .tooltip{
+            position:relative;
+            display:inline-block;
+            border-bottom:1px dotted black;/* add dots under the hoverable text */
+            cursor;pointer;
+        }
+
+    .tooltiptext{
+        visibility:hidden;/* hidden by default */
+        width:150px;
+        heigth:100px;
+        border-radius:5px;
+        background-color:grey;
+        color:#ffffff;
+        text-align:center;
+        padding:5px 0;
+        position:absolute;
+        z-index:1; /* ensure tooltip is displayed above content */
+    }    
+
+    /* show the tooltip text on hover */
+    .tooltip:hover .tooltiptext{
+        visibility:visible;
+    }
+    </style>
+    <body>
+        <h1>로그인</h1>
+        <p class="p_back"><!--로그인하는 방법을 설명하는 패러그래프 : html 주석, 코멘트-->
+        로그인하려면 아이디 패스워드를 넣으세요.<br>
+        <b><a href="https://www.youtube.com/watch?v=PNpsJ--XGOo&list=RDPNpsJ--XGOo&start_radio=1"target="_blank">심심하면 눌러 보세요!</a></b><br>   
+        <b><a href="https://www.syu.ac.kr" target="_blank">홈페이지</a></b><br>
+        &lt;<b>홈페이지</b>&gt;을 누르면 삼육대학교 홈페이지로 이동합니다.</p>
+        <ul style="width:350px;list-style=type:none;">
+            <li class="tooltip" style="width:150px!important;cursor:help;">아이디
+                <span class="tooltiptext">학번을 입력하세요.</span>
+            </li>
+            <li class="tooltip" style="cursor:help;">패스워드
+                <span class="tooltiptext">패스워드는 대문자, 소문자, 특수문자, 숫자를 조합해서 입력하세요.</span>
+            </li>
+            <li style="width:150px !important;"><input type="text" name="user24" style="width:130px;heigth:24px"></li>
+            <li><input type="password" name="userpassword" style="width:130px;height:24px"></li>
+        </ul>
+        <br>
+        <p class="p_back2"></p>
+    </body>
+</html>
